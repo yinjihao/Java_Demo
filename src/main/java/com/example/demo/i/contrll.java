@@ -6,6 +6,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.Socket;
+import java.net.SocketAddress;
+
 @RestController
 public class contrll {
 
@@ -15,7 +18,6 @@ public class contrll {
 
     @RequestMapping(path = "/get")
     public String get() {
-        mSale.execute("sql");
         return "赵汉是狗";
     }
 }
